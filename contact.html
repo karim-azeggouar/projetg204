@@ -1,13 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Contactez l’équipe Vendo : nous sommes là pour vous aider.">
+  <title>Contact — Vendo</title>
+  <style>
+    :root{--ink:#20231f;--muted:#72766f;--green:#176b4a;--green-dark:#10583c;--paper:#f7f7f4;--line:#e8e9e3;--white:#fff;--shadow:0 12px 35px #243b2a12}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+    .topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center}.nav{display:flex;align-items:center;gap:30px}.brand{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-weight:850;font-size:26px;letter-spacing:-1.4px}.brand-mark{width:32px;height:32px;border-radius:11px;background:var(--green);display:grid;place-items:center;color:white;font-size:19px;font-weight:900;letter-spacing:-2px}.nav-links{display:flex;gap:25px;margin-left:14px;color:#555b54;font-size:14px;font-weight:600}.nav-links a:hover{color:var(--green)}.nav-actions{display:flex;align-items:center;gap:16px;margin-left:auto}.login{font-size:14px;font-weight:650}.sell-btn,.primary-btn{border:0;background:var(--green);color:white;border-radius:11px;padding:12px 17px;font-weight:750;cursor:pointer;transition:.2s}.sell-btn:hover,.primary-btn:hover{background:var(--green-dark);transform:translateY(-1px)}
+    .contact{padding:62px 0 68px}.contact-grid{display:grid;grid-template-columns:1fr .94fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);background:#e8f1e8;border-radius:100px;padding:8px 12px;font-size:12px;font-weight:750}.eyebrow span{width:7px;height:7px;background:#55a573;border-radius:50%}h1{font-size:clamp(40px,5vw,60px);letter-spacing:-3px;line-height:1.04;margin:20px 0 15px;max-width:560px}h1 em{font-style:normal;color:var(--green)}.lead{font-size:16px;line-height:1.7;color:#686e67;max-width:510px;margin:0 0 28px}.contact-info{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.info-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;align-items:center;gap:11px}.info-icon{width:38px;height:38px;flex:none;border-radius:12px;background:#eef3e9;display:grid;place-items:center;color:var(--green);font-size:18px}.info-item b{display:block;font-size:12px}.info-item small{display:block;color:#7b817a;font-size:11px;margin-top:4px}.contact-art{min-height:505px;border-radius:26px;background:#e8eddc;position:relative;overflow:hidden;padding:28px}.contact-art:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#d8e3c4;right:-7%;top:-21%}.contact-art:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#f4e5c4;left:-9%;bottom:-20%}.art-inner{position:absolute;inset:28px 31px;border-radius:22px;background:linear-gradient(155deg,#aab89d,#d9d0ad 49%,#b99976);overflow:hidden;box-shadow:0 20px 45px #3d513327}.art-inner:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#26352100 44%,#263521a8)}.big-chat{position:absolute;z-index:1;font-size:145px;left:50%;top:47%;transform:translate(-50%,-50%);filter:drop-shadow(0 14px 18px #26352135)}.leaf{position:absolute;z-index:1;right:17%;top:18%;font-size:54px;transform:rotate(-22deg);opacity:.9}.art-label{position:absolute;z-index:3;top:45px;left:15px;background:#fff;border-radius:14px;padding:12px 15px;display:flex;gap:10px;align-items:center;box-shadow:var(--shadow);font-size:12px;font-weight:750}.art-label span{width:35px;height:35px;border-radius:11px;background:#eef3e9;display:grid;place-items:center;font-size:18px}.art-label small{display:block;color:#7b817a;font-weight:500;font-size:10px;margin-top:3px}.art-label.bottom{top:auto;left:auto;right:14px;bottom:45px}
+    .form-section{padding:0 0 70px}.form-card{max-width:850px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow)}.form-title{margin:0 0 6px;font-size:23px;letter-spacing:-.7px}.form-intro{margin:0 0 23px;font-size:13px;color:var(--muted)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700}.field input,.field textarea,.field select{border:1px solid #dfe2da;border-radius:10px;padding:12px 13px;background:#fff;outline:none;color:var(--ink);font-size:13px;transition:border .2s,box-shadow .2s}.field input:focus,.field textarea:focus,.field select:focus{border-color:#72a586;box-shadow:0 0 0 3px #176b4a16}.field textarea{resize:vertical;min-height:135px}.form-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:17px}.privacy{font-size:11px;color:#81867e;line-height:1.5}.form-status{font-size:12px;color:var(--green);font-weight:650;min-height:17px;margin-top:12px}.footer{background:#fff;border-top:1px solid var(--line);padding:24px 0;color:#7b817a;font-size:12px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer .brand{font-size:21px}.footer .brand-mark{width:27px;height:27px;font-size:16px;border-radius:9px}.footer-links{display:flex;gap:20px}.footer-links a:hover{color:var(--green)}
+    @media(max-width:850px){.contact-grid{grid-template-columns:1fr .85fr;gap:24px}.contact-art{min-height:420px}.nav-links{gap:15px;margin-left:0}}
+    @media(max-width:640px){.wrap{width:min(100% - 32px,500px)}.topbar{height:65px}.nav{gap:0}.nav-links{display:none}.nav-actions{gap:11px}.login{font-size:13px}.sell-btn{padding:10px 12px;font-size:12px}.contact{padding:38px 0 40px}.contact-grid{grid-template-columns:1fr;gap:27px}h1{font-size:43px;letter-spacing:-2.3px;margin-top:16px}.lead{font-size:14px}.contact-info{gap:9px}.info-item{padding:11px;gap:8px}.info-item small{font-size:10px}.info-item b{font-size:11px}.contact-art{min-height:300px}.art-inner{inset:20px 24px}.big-chat{font-size:100px}.art-label{top:30px;left:9px}.art-label.bottom{right:8px;bottom:30px}.form-section{padding-bottom:40px}.form-card{padding:21px 17px}.form-grid{grid-template-columns:1fr;gap:13px}.field.full{grid-column:auto}.form-bottom{align-items:flex-start;flex-direction:column}.form-bottom .primary-btn{width:100%}.footer-inner{flex-direction:column;align-items:flex-start}.footer-links{gap:14px;flex-wrap:wrap}}
+  </style>
 </head>
 <body>
-    
-
-    <h1>     Page contact </h1>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Vendo, accueil"><span class="brand-mark">v.</span>vendo</a>
+      <div class="nav-links"><a href="index.html#annonces">Explorer</a><a href="index.html#categories">Catégories</a><a href="index.html#vendre">Comment ça marche</a></div>
+      <div class="nav-actions"><a class="login" href="#connexion">Se connecter</a><a class="sell-btn" href="index.html#vendre">＋ Déposer une annonce</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <span class="eyebrow"><span></span> L’équipe Vendo est à votre écoute</span>
+          <h1>On est là pour <em>vous aider.</em></h1>
+          <p class="lead">Une question sur une annonce, besoin d’un coup de main ou une idée à partager ? Écrivez-nous, notre équipe vous répond avec plaisir.</p>
+          <div class="contact-info">
+            <div class="info-item"><span class="info-icon">✉</span><span><b>Par e-mail</b><small>bonjour@vendo.fr</small></span></div>
+            <div class="info-item"><span class="info-icon">◷</span><span><b>Notre disponibilité</b><small>Lun–Ven, 9 h–18 h</small></span></div>
+          </div>
+        </div>
+        <div class="contact-art" aria-label="Illustration d’un message envoyé à l’équipe Vendo">
+          <div class="art-inner"><span class="big-chat">💬</span><span class="leaf">🌿</span></div>
+          <div class="art-label"><span>✉️</span><div>Une équipe à l’écoute<small>Chaque message compte</small></div></div>
+          <div class="art-label bottom"><span>💚</span><div>Réponse sous 24 h<small>Les jours ouvrés</small></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="form-section">
+      <div class="wrap">
+        <form class="form-card" id="contact-form">
+          <h2 class="form-title">Envoyez-nous un message</h2>
+          <p class="form-intro">Remplissez le formulaire, nous reviendrons vers vous rapidement.</p>
+          <div class="form-grid">
+            <div class="field"><label for="name">Votre nom</label><input id="name" name="name" autocomplete="name" placeholder="Ex. Camille Dupont" required></div>
+            <div class="field"><label for="email">Votre adresse e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required></div>
+            <div class="field full"><label for="subject">Sujet</label><select id="subject" name="subject" required><option value="" selected disabled>Choisissez le sujet de votre message</option><option>Question sur une annonce</option><option>Mon compte Vendo</option><option>Signaler un problème</option><option>Autre demande</option></select></div>
+            <div class="field full"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Comment pouvons-nous vous aider ?" required></textarea></div>
+          </div>
+          <div class="form-bottom"><span class="privacy">Vos informations restent confidentielles et servent uniquement à vous répondre.</span><button class="primary-btn" type="submit">Envoyer le message&nbsp; →</button></div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html"><span class="brand-mark">v.</span>vendo</a><span>© 2025 Vendo · Les objets ont une deuxième histoire.</span><div class="footer-links"><a href="#aide">Centre d’aide</a><a href="#confidentialite">Confidentialité</a><a href="#conditions">Conditions</a></div></div></footer>
+  <script>
+    document.querySelector('#contact-form').addEventListener('submit', event => {
+      event.preventDefault();
+      document.querySelector('#form-status').textContent = 'Merci pour votre message ! Le formulaire est prêt à être relié à votre service d’envoi.';
+    });
+  </script>
 </body>
 </html>
